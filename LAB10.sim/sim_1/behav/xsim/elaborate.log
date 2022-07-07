@@ -10,5 +10,8 @@ Time Resolution for simulation is 1ps
 Compiling package std.standard
 Compiling package std.textio
 Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.Decoder_2_to_4 [decoder_2_to_4_default]
+Compiling architecture behavioral of entity xil_defaultlib.Decoder_3_to_8 [decoder_3_to_8_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_8_to_1 [mux_8_to_1_default]
 Compiling architecture behavioral of entity xil_defaultlib.tb_mux_8_to_1
 Built simulation snapshot TB_Mux_8_to_1_behav
