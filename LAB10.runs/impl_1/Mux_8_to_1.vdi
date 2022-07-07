@@ -265,3 +265,159 @@ INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 
 Checksum: PlaceDB: dbc8a605 ConstDB: 0 ShapeSum: edf92f3 RouteDB: 0
 
 Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 1d0420c46
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:42 . Memory (MB): peak = 1293.047 ; gain = 123.605
+Post Restoration Checksum: NetGraph: db01c037 NumContArr: f5404c0f Constraints: 0 Timing: 0
+
+Phase 2 Router Initialization
+INFO: [Route 35-64] No timing constraints were detected. The router will operate in resource-optimization mode.
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: 1d0420c46
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:42 . Memory (MB): peak = 1299.086 ; gain = 129.645
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 1d0420c46
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:42 . Memory (MB): peak = 1299.086 ; gain = 129.645
+Phase 2 Router Initialization | Checksum: 1d0420c46
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:42 . Memory (MB): peak = 1300.781 ; gain = 131.340
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: a20f47d7
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:42 . Memory (MB): peak = 1300.781 ; gain = 131.340
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 0
+Phase 4.1 Global Iteration 0 | Checksum: 111ff6459
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:42 . Memory (MB): peak = 1300.820 ; gain = 131.379
+Phase 4 Rip-up And Reroute | Checksum: 111ff6459
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:42 . Memory (MB): peak = 1300.820 ; gain = 131.379
+
+Phase 5 Delay and Skew Optimization
+Phase 5 Delay and Skew Optimization | Checksum: 111ff6459
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:42 . Memory (MB): peak = 1300.820 ; gain = 131.379
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+Phase 6.1 Hold Fix Iter | Checksum: 111ff6459
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:42 . Memory (MB): peak = 1300.820 ; gain = 131.379
+Phase 6 Post Hold Fix | Checksum: 111ff6459
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:42 . Memory (MB): peak = 1300.820 ; gain = 131.379
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.00342821 %
+  Global Horizontal Routing Utilization  = 0.00390422 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 3.6036%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 3.6036%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 2.94118%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 2.94118%, No Congested Regions.
+
+------------------------------
+Reporting congestion hotspots
+------------------------------
+Direction: North
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: South
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: East
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: West
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+
+Phase 7 Route finalize | Checksum: 111ff6459
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:42 . Memory (MB): peak = 1300.820 ; gain = 131.379
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 111ff6459
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:42 . Memory (MB): peak = 1303.094 ; gain = 133.652
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 1df4bb7bd
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:42 . Memory (MB): peak = 1303.094 ; gain = 133.652
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:42 . Memory (MB): peak = 1303.094 ; gain = 133.652
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+51 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:46 ; elapsed = 00:00:44 . Memory (MB): peak = 1303.094 ; gain = 134.363
+WARNING: [Constraints 18-5210] No constraint will be written out.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.076 . Memory (MB): peak = 1303.094 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/dilsh/LAB10/LAB10.runs/impl_1/Mux_8_to_1_routed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file Mux_8_to_1_drc_routed.rpt -pb Mux_8_to_1_drc_routed.pb -rpx Mux_8_to_1_drc_routed.rpx
+Command: report_drc -file Mux_8_to_1_drc_routed.rpt -pb Mux_8_to_1_drc_routed.pb -rpx Mux_8_to_1_drc_routed.rpx
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/dilsh/LAB10/LAB10.runs/impl_1/Mux_8_to_1_drc_routed.rpt.
+report_drc completed successfully
+INFO: [runtcl-4] Executing : report_methodology -file Mux_8_to_1_methodology_drc_routed.rpt -pb Mux_8_to_1_methodology_drc_routed.pb -rpx Mux_8_to_1_methodology_drc_routed.rpx
+Command: report_methodology -file Mux_8_to_1_methodology_drc_routed.rpt -pb Mux_8_to_1_methodology_drc_routed.pb -rpx Mux_8_to_1_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file C:/Users/dilsh/LAB10/LAB10.runs/impl_1/Mux_8_to_1_methodology_drc_routed.rpt.
+report_methodology completed successfully
+INFO: [runtcl-4] Executing : report_power -file Mux_8_to_1_power_routed.rpt -pb Mux_8_to_1_power_summary_routed.pb -rpx Mux_8_to_1_power_routed.rpx
+Command: report_power -file Mux_8_to_1_power_routed.rpt -pb Mux_8_to_1_power_summary_routed.pb -rpx Mux_8_to_1_power_routed.rpx
+WARNING: [Power 33-232] No user defined clocks were found in the design!
+Resolution: Please specify clocks using create_clock/create_generated_clock for sequential elements. For pure combinatorial circuits, please specify a virtual clock, otherwise the vectorless estimation might be inaccurate
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+62 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: [runtcl-4] Executing : report_route_status -file Mux_8_to_1_route_status.rpt -pb Mux_8_to_1_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file Mux_8_to_1_timing_summary_routed.rpt -pb Mux_8_to_1_timing_summary_routed.pb -rpx Mux_8_to_1_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max, Timing Stage: Requireds.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+INFO: [runtcl-4] Executing : report_incremental_reuse -file Mux_8_to_1_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-545] No incremental reuse to report, no incremental placement and routing data was found.
+INFO: [runtcl-4] Executing : report_clock_utilization -file Mux_8_to_1_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file Mux_8_to_1_bus_skew_routed.rpt -pb Mux_8_to_1_bus_skew_routed.pb -rpx Mux_8_to_1_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max, Timing Stage: Requireds.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Common 17-206] Exiting Vivado at Thu Jul  7 14:35:24 2022...
