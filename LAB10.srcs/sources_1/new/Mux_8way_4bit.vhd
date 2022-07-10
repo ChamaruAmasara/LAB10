@@ -32,10 +32,17 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity Mux_8way_4bit is
-    Port ( S : in STD_LOGIC_VECTOR (2 downto 0);
-           D : in STD_LOGIC_VECTOR (7 downto 0);
+    Port ( S  : in STD_LOGIC_VECTOR (2 downto 0);
+           D1 : in STD_LOGIC_VECTOR (3 downto 0);
+           D2 : in STD_LOGIC_VECTOR (3 downto 0);
+           D3 : in STD_LOGIC_VECTOR (3 downto 0);
+           D4 : in STD_LOGIC_VECTOR (3 downto 0);
+           D5 : in STD_LOGIC_VECTOR (3 downto 0);
+           D6 : in STD_LOGIC_VECTOR (3 downto 0);
+           D7 : in STD_LOGIC_VECTOR (3 downto 0);
+           D8 : in STD_LOGIC_VECTOR (3 downto 0);
            EN : in STD_LOGIC;
-           Y : out STD_LOGIC);
+           Y : out std_logic_vector (3 downto 0));
 end Mux_8way_4bit;
 
 architecture Behavioral of Mux_8way_4bit is
@@ -56,14 +63,28 @@ begin
             Y => DY
         );
         
-        Y <= EN AND ((D(0) AND DY(0)) 
-                    OR (D(1) AND DY(1))
-                    OR (D(2) AND DY(2))
-                    OR (D(3) AND DY(3))
-                    OR (D(4) AND DY(4))
-                    OR (D(5) AND DY(5))
-                    OR (D(6) AND DY(6))
-                    OR (D(7) AND DY(7)));
+    process
+    begin
+        if (DY="00000001") then
+            Y <= D1;
+        elsif (DY="00000010") then
+            Y <= D2;
+        elsif (DY="00000100") then
+            Y <= D3;
+        elsif (DY="00001000") then
+            Y <= D4;
+        elsif (DY="00010000") then
+            Y <= D5;
+        elsif (DY="00100000") then
+            Y <= D6;
+        elsif (DY="01000000") then
+            Y <= D7;
+        else
+            Y <= D8;
+        end if;
+        wait;
+    end process;
+        
                     
                     
 
