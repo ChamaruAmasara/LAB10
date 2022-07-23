@@ -50,13 +50,14 @@ begin
 
 --getting the num for Selecting the instruction
 Instruction_Select<=Instruction_Bus(11 downto 10);
-
+process begin
 case Instruction_Select is  --Selecting the instruction
     when "00"=>
     --Add values in registers Ra and Rb and store the result in Ra
     Register_select_01<=Instruction_Bus(9 downto 7);
     Register_select_02<=Instruction_Bus(6 downto 4);
     ADD_SUB_Select<='0';
+    Load_Select<='1'; --if 1 selecty the output of 4 bit addsub, if 0 select imediate value
     Reg_Enable<=Instruction_Bus(9 downto 7);
     
     when "01"=>
@@ -64,18 +65,26 @@ case Instruction_Select is  --Selecting the instruction
     Register_select_01<="000";
     Register_select_02<=Instruction_Bus(9 downto 7);
     ADD_SUB_Select<='1';
+    Load_Select<='1';
     Reg_Enable<=Instruction_Bus(9 downto 7);
     
     
     when "10"=>
     --Move immediate value d to register R
     Immediate_value<=Instruction_Bus(3 downto 0);
+    Load_Select<='0';
     Reg_Enable<=Instruction_Bus(9 downto 7);
     
     when "11"=>
-    
+    Register_select_01<=Instruction_Bus(9 downto 7);
+    if(Reg_Check_for_Jump="0000") then
+        Jump_Flag<='1';
+        Address_to_jump<=Instruction_Bus(2 downto 0);
+    else
+        Jump_Flag<='0';
+    end if;
 end case;
 
-
+end process;
 
 end Behavioral;
