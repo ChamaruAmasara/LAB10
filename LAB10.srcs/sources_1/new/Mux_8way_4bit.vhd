@@ -32,38 +32,56 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity Mux_8way_4bit is
-    Port ( S : in STD_LOGIC_VECTOR (2 downto 0);
-           D : in STD_LOGIC_VECTOR (7 downto 0);
+
+-- RegSel will select the register from D1 to D8 it's 3 bit signal
+    Port ( RegSel  : in STD_LOGIC_VECTOR (2 downto 0);
+    
+    -- 8 registers
+           D1 : in STD_LOGIC_VECTOR (3 downto 0);
+           D2 : in STD_LOGIC_VECTOR (3 downto 0);
+           D3 : in STD_LOGIC_VECTOR (3 downto 0);
+           D4 : in STD_LOGIC_VECTOR (3 downto 0);
+           D5 : in STD_LOGIC_VECTOR (3 downto 0);
+           D6 : in STD_LOGIC_VECTOR (3 downto 0);
+           D7 : in STD_LOGIC_VECTOR (3 downto 0);
+           D8 : in STD_LOGIC_VECTOR (3 downto 0);
+           
+   -- enable signal
            EN : in STD_LOGIC;
-           Y : out STD_LOGIC);
+           
+   -- output signal
+           Y : out std_logic_vector (3 downto 0));
 end Mux_8way_4bit;
 
 architecture Behavioral of Mux_8way_4bit is
-    component Decoder_3_to_8
-        Port(I: in STD_LOGIC_VECTOR;
-                EN: in STD_LOGIC;
-                Y: out STD_LOGIC_VECTOR
-            );
+    
+begin        
+
+-- Based on RegSel the register will be defined and the output will be contents of the selected register
+    process
+    begin
+        if EN='1' then
+            if (RegSel="000") then
+                Y <= D1;
+            elsif (RegSel="001") then
+                Y <= D2;
+            elsif (RegSel="010") then
+                Y <= D3;
+            elsif (RegSel="011") then
+                Y <= D4;
+            elsif (RegSel="100") then
+                Y <= D5;
+            elsif (RegSel="101") then
+                Y <= D6;
+            elsif (RegSel="110") then
+                Y <= D7;
+            else
+                Y <= D8;
+            end if;
+        end if;
+        wait;
+    end process;
         
-        
-    end component;    
-    signal DY : STD_LOGIC_VECTOR (7 downto 0);
-begin
-    Decoder_3_to_8_0 : Decoder_3_to_8
-        PORT MAP (
-            I=>S,
-            EN => EN,
-            Y => DY
-        );
-        
-        Y <= EN AND ((D(0) AND DY(0)) 
-                    OR (D(1) AND DY(1))
-                    OR (D(2) AND DY(2))
-                    OR (D(3) AND DY(3))
-                    OR (D(4) AND DY(4))
-                    OR (D(5) AND DY(5))
-                    OR (D(6) AND DY(6))
-                    OR (D(7) AND DY(7)));
                     
                     
 

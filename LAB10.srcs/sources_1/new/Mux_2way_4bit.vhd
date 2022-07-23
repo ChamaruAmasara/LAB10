@@ -31,26 +31,26 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity Mux_2way_3bit is
-    Port ( JumpFlag : in STD_LOGIC;
-           Adder3BitOut : in STD_LOGIC_VECTOR (2 downto 0);
-           AddressToJump : in STD_LOGIC_VECTOR (2 downto 0);
+entity Mux_2way_4bit is
+    Port ( LoadSelect : in STD_LOGIC;
+           AddSubUnit4BitOut : in STD_LOGIC_VECTOR (2 downto 0);
+           ImmediateValue : in STD_LOGIC_VECTOR (2 downto 0);
     -- enable signal
            EN : in STD_LOGIC;
     -- output
-           Y : out STD_LOGIC_VECTOR (2 downto 0));
-end Mux_2way_3bit;
+           valueToRegisters : out STD_LOGIC_VECTOR (2 downto 0));
+end Mux_2way_4bit;
 
-architecture Behavioral of Mux_2way_3bit is
+architecture Behavioral of Mux_2way_4bit is
   
 begin
 process
     begin
     if EN='1' then
-        if (JumpFlag='0') then
-            Y <= Adder3BitOut;
+        if (LoadSelect='1') then
+            valueToRegisters <= AddSubUnit4BitOut;
         else
-            Y <= AddressToJump;
+            valueToRegisters <= ImmediateValue;
         end if;
     end if;
     wait;

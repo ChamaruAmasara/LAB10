@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="38" Path="E:/Mora/Digital Design and Computer Organization/Vivado Lab Projects/LAB10/LAB10/LAB10.xpr">
+<Project Version="7" Minor="38" Path="C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="f330702f431647419194c50ab3747a93"/>
@@ -184,6 +184,13 @@
         </FileInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/new/Instruction_Decoder.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/Mux_2way_4bit.vhd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
