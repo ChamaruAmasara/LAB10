@@ -1,0 +1,88 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Jul 26 10:36:17 2022
+# Process ID: 56012
+# Current directory: C:/Users/dilsh/LAB10_New_New/LAB10_Dilshan_New/LAB10
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9268 C:\Users\dilsh\LAB10_New_New\LAB10_Dilshan_New\LAB10\LAB10.xpr
+# Log file: C:/Users/dilsh/LAB10_New_New/LAB10_Dilshan_New/LAB10/vivado.log
+# Journal file: C:/Users/dilsh/LAB10_New_New/LAB10_Dilshan_New/LAB10\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/dilsh/LAB10_New_New/LAB10_Dilshan_New/LAB10/LAB10.xpr
+update_compile_order -fileset sources_1
+launch_simulation -simset TB_Processor
+source TB_Processor.tcl
+current_wave_config {Untitled 1}
+add_wave {{/TB_Processor/UUT/Slow_Clk0/Clk_in}} 
+current_wave_config {Untitled 1}
+add_wave {{/TB_Processor/UUT/Slow_Clk0/Clk_out}} 
+save_wave_config {C:/Users/dilsh/LAB10_New_New/LAB10_Dilshan_New/LAB10/TB_Processor_behav.wcfg}
+add_files -fileset TB_Processor -norecurse C:/Users/dilsh/LAB10_New_New/LAB10_Dilshan_New/LAB10/TB_Processor_behav.wcfg
+set_property xsim.view {C:/Users/dilsh/TB_Processor_behav.wcfg C:/Users/dilsh/LAB10_New_New/LAB10_Dilshan_New/LAB10/TB_Processor_behav.wcfg} [get_filesets TB_Processor]
+close_sim
+launch_simulation -simset TB_Processor
+open_wave_config C:/Users/dilsh/LAB10_New_New/LAB10_Dilshan_New/LAB10/TB_Processor_behav.wcfg
+source TB_Processor.tcl
+close_sim
+launch_simulation -simset TB_Processor
+open_wave_config C:/Users/dilsh/LAB10_New_New/LAB10_Dilshan_New/LAB10/TB_Processor_behav.wcfg
+source TB_Processor.tcl
+current_wave_config {TB_Processor_behav.wcfg}
+add_wave {{/TB_Processor/UUT/Instruction_Decoder0/Instruction_Bus}} 
+save_wave_config {C:/Users/dilsh/LAB10_New_New/LAB10_Dilshan_New/LAB10/TB_Processor_behav.wcfg}
+close_sim
+launch_simulation -simset TB_Processor
+open_wave_config C:/Users/dilsh/LAB10_New_New/LAB10_Dilshan_New/LAB10/TB_Processor_behav.wcfg
+source TB_Processor.tcl
+current_wave_config {TB_Processor_behav.wcfg}
+add_wave {{/TB_Processor/UUT/Program_counter0/MemorySelect}} 
+save_wave_config {C:/Users/dilsh/LAB10_New_New/LAB10_Dilshan_New/LAB10/TB_Processor_behav.wcfg}
+close_sim
+launch_simulation -simset TB_Processor
+open_wave_config C:/Users/dilsh/LAB10_New_New/LAB10_Dilshan_New/LAB10/TB_Processor_behav.wcfg
+source TB_Processor.tcl
+close_sim
+launch_simulation -simset TB_Processor
+open_wave_config C:/Users/dilsh/LAB10_New_New/LAB10_Dilshan_New/LAB10/TB_Processor_behav.wcfg
+source TB_Processor.tcl
+close_sim
+launch_simulation -simset TB_Processor
+open_wave_config C:/Users/dilsh/LAB10_New_New/LAB10_Dilshan_New/LAB10/TB_Processor_behav.wcfg
+source TB_Processor.tcl
+current_wave_config {TB_Processor_behav.wcfg}
+add_wave {{/TB_Processor/UUT/Register_bank0/R0}} 
+current_wave_config {TB_Processor_behav.wcfg}
+add_wave {{/TB_Processor/UUT/Register_bank0/R1}} 
+current_wave_config {TB_Processor_behav.wcfg}
+add_wave {{/TB_Processor/UUT/Register_bank0/R2}} 
+current_wave_config {TB_Processor_behav.wcfg}
+add_wave {{/TB_Processor/UUT/Register_bank0/R3}} 
+current_wave_config {TB_Processor_behav.wcfg}
+add_wave {{/TB_Processor/UUT/Register_bank0/R4}} 
+current_wave_config {TB_Processor_behav.wcfg}
+add_wave {{/TB_Processor/UUT/Register_bank0/R5}} 
+current_wave_config {TB_Processor_behav.wcfg}
+add_wave {{/TB_Processor/UUT/Register_bank0/R6}} 
+current_wave_config {TB_Processor_behav.wcfg}
+add_wave {{/TB_Processor/UUT/Register_bank0/R7}} 
+save_wave_config {C:/Users/dilsh/LAB10_New_New/LAB10_Dilshan_New/LAB10/TB_Processor_behav.wcfg}
+close_sim
+launch_simulation -simset TB_Processor
+open_wave_config C:/Users/dilsh/LAB10_New_New/LAB10_Dilshan_New/LAB10/TB_Processor_behav.wcfg
+source TB_Processor.tcl
+close_sim
+launch_simulation -simset TB_Processor
+open_wave_config C:/Users/dilsh/LAB10_New_New/LAB10_Dilshan_New/LAB10/TB_Processor_behav.wcfg
+source TB_Processor.tcl
+current_wave_config {TB_Processor_behav.wcfg}
+add_wave {{/TB_Processor/UUT/AddSubUnitBit_40/A}} 
+current_wave_config {TB_Processor_behav.wcfg}
+add_wave {{/TB_Processor/UUT/AddSubUnitBit_40/B}} 
+save_wave_config {C:/Users/dilsh/LAB10_New_New/LAB10_Dilshan_New/LAB10/TB_Processor_behav.wcfg}
+close_sim
+launch_simulation -simset TB_Processor
+open_wave_config C:/Users/dilsh/LAB10_New_New/LAB10_Dilshan_New/LAB10/TB_Processor_behav.wcfg
+source TB_Processor.tcl
+close_sim

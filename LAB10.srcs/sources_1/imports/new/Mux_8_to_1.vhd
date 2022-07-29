@@ -38,24 +38,13 @@ entity Mux_2way_3bit is
     -- enable signal
            EN : in STD_LOGIC;
     -- output
-           Y : out STD_LOGIC_VECTOR (2 downto 0));
+           Output : out STD_LOGIC_VECTOR (2 downto 0));
 end Mux_2way_3bit;
 
 architecture Behavioral of Mux_2way_3bit is
   
 begin
-process
-    begin
-    if EN='1' then
-        if (JumpFlag='0') then
-            Y <= Adder3BitOut;
-        else
-            Y <= AddressToJump;
-        end if;
-    end if;
-    wait;
-end process;                   
-                    
 
+Output <= Adder3BitOut WHEN (JumpFlag='0') ELSE AddressToJump;
 
 end Behavioral;

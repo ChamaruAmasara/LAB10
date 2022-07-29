@@ -1,0 +1,10 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/imports/new/Decoder_2_to_4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Decoder_2_to_4
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/TB_Mux_8_to_1/imports/new/Decoder_3_to_8.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Decoder_3_to_8
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/TB_Mux_8_to_1/imports/new/Mux_8way_4bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mux_8way_4bit
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/new/quad_tri_state_buffer.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity quad_tri_state_buffer
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/TB_Mux_8_to_1/imports/LAB10.sim/TB_Mux_8_to_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity TB_Mux_8_to_1

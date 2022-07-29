@@ -33,29 +33,17 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity Mux_2way_4bit is
     Port ( LoadSelect : in STD_LOGIC;
-           AddSubUnit4BitOut : in STD_LOGIC_VECTOR (2 downto 0);
-           ImmediateValue : in STD_LOGIC_VECTOR (2 downto 0);
+           AddSubUnit4BitOut : in STD_LOGIC_VECTOR (3 downto 0);
+           ImmediateValue : in STD_LOGIC_VECTOR (3 downto 0);
     -- enable signal
            EN : in STD_LOGIC;
     -- output
-           valueToRegisters : out STD_LOGIC_VECTOR (2 downto 0));
+           valueToRegisters : out STD_LOGIC_VECTOR (3 downto 0));
 end Mux_2way_4bit;
 
 architecture Behavioral of Mux_2way_4bit is
-  
-begin
-process
-    begin
-    if EN='1' then
-        if (LoadSelect='1') then
-            valueToRegisters <= AddSubUnit4BitOut;
-        else
-            valueToRegisters <= ImmediateValue;
-        end if;
-    end if;
-    wait;
-end process;                   
+begin            
                     
-
+valueToRegisters <= AddSubUnit4BitOut WHEN (LoadSelect='1') ELSE ImmediateValue;
 
 end Behavioral;

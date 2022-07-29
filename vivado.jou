@@ -2,37 +2,20 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Thu Jul  7 19:12:55 2022
-# Process ID: 14828
-# Current directory: E:/Mora/Digital Design and Computer Organization/Vivado Lab Projects/LAB10/LAB10
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19844 E:\Mora\Digital Design and Computer Organization\Vivado Lab Projects\LAB10\LAB10\LAB10.xpr
-# Log file: E:/Mora/Digital Design and Computer Organization/Vivado Lab Projects/LAB10/LAB10/vivado.log
-# Journal file: E:/Mora/Digital Design and Computer Organization/Vivado Lab Projects/LAB10/LAB10\vivado.jou
+# Start of session at: Wed Jul 27 00:01:08 2022
+# Process ID: 62920
+# Current directory: C:/Users/dilsh/LAB10_New_New/LAB10_Dilshan_New/LAB10
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent54044 C:\Users\dilsh\LAB10_New_New\LAB10_Dilshan_New\LAB10\LAB10.xpr
+# Log file: C:/Users/dilsh/LAB10_New_New/LAB10_Dilshan_New/LAB10/vivado.log
+# Journal file: C:/Users/dilsh/LAB10_New_New/LAB10_Dilshan_New/LAB10\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project {E:/Mora/Digital Design and Computer Organization/Vivado Lab Projects/LAB10/LAB10/LAB10.xpr}
+open_project C:/Users/dilsh/LAB10_New_New/LAB10_Dilshan_New/LAB10/LAB10.xpr
 update_compile_order -fileset sources_1
-file mkdir E:/Mora/Digital Design and Computer Organization/Vivado Lab Projects/LAB10/LAB10/LAB10.srcs/sim_1/new
-file mkdir E:/Mora/Digital Design and Computer Organization/Vivado Lab Projects/LAB10/LAB10/LAB10.srcs/sim_1/new
-file mkdir E:/Mora/Digital Design and Computer Organization/Vivado Lab Projects/LAB10/LAB10/LAB10.srcs/sim_1/new
-file mkdir E:/Mora/Digital Design and Computer Organization/Vivado Lab Projects/LAB10/LAB10/LAB10.srcs/sim_1/new
-file mkdir E:/Mora/Digital Design and Computer Organization/Vivado Lab Projects/LAB10/LAB10/LAB10.srcs/sim_1/new
-set_property SOURCE_SET sources_1 [get_filesets sim_1]
-file mkdir E:/Mora/Digital Design and Computer Organization/Vivado Lab Projects/LAB10/LAB10/LAB10.srcs/sim_1/new
-file mkdir {E:/Mora/Digital Design and Computer Organization/Vivado Lab Projects/LAB10/LAB10/LAB10.srcs/sim_1/new}
-close [ open {E:/Mora/Digital Design and Computer Organization/Vivado Lab Projects/LAB10/LAB10/LAB10.srcs/sim_1/new/TB_AddSubUnitBit_4.vhd} w ]
-add_files -fileset sim_1 {{E:/Mora/Digital Design and Computer Organization/Vivado Lab Projects/LAB10/LAB10/LAB10.srcs/sim_1/new/TB_AddSubUnitBit_4.vhd}}
-update_compile_order -fileset sim_1
-# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
-set_property source_mgmt_mode None [current_project]
-set_property top TB_AddSubUnitBit_4 [get_filesets sim_1]
-set_property top_lib xil_defaultlib [get_filesets sim_1]
-# Re-enabling previously disabled source management mode.
-set_property source_mgmt_mode All [current_project]
-update_compile_order -fileset sim_1
-launch_simulation
-source TB_AddSubUnitBit_4.tcl
-close_sim
-launch_simulation
-source TB_AddSubUnitBit_4.tcl
-close_sim
+add_files -norecurse -scan_for_includes C:/Users/dilsh/Lab7/Lab7.srcs/sources_1/new/LUT_16_7.vhd
+import_files -norecurse C:/Users/dilsh/Lab7/Lab7.srcs/sources_1/new/LUT_16_7.vhd
+update_compile_order -fileset sources_1
+close [ open C:/Users/dilsh/LAB10_New_New/LAB10_Dilshan_New/LAB10/LAB10.srcs/sources_1/new/R7_7_seg.vhd w ]
+add_files C:/Users/dilsh/LAB10_New_New/LAB10_Dilshan_New/LAB10/LAB10.srcs/sources_1/new/R7_7_seg.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1

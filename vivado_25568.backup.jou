@@ -1,0 +1,137 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon Jul 25 23:46:37 2022
+# Process ID: 25568
+# Current directory: C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10_New_New/LAB10_Dilshan_New/LAB10
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18532 C:\Users\mailt\Documents\A UoM\3. Computer Organization and Digital Design\Lab Sessions\LAB10_New_New\LAB10_Dilshan_New\LAB10\LAB10.xpr
+# Log file: C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10_New_New/LAB10_Dilshan_New/LAB10/vivado.log
+# Journal file: C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10_New_New/LAB10_Dilshan_New/LAB10\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10_New_New/LAB10_Dilshan_New/LAB10/LAB10.xpr}
+update_compile_order -fileset sources_1
+launch_simulation -simset TB_Instruction_decoder
+launch_simulation -simset TB_Instruction_decoder
+source TB_Instruction_Decoder.tcl
+set_property SOURCE_SET {} [get_filesets TB_Instruction_decoder]
+add_files -fileset TB_Instruction_decoder -norecurse -scan_for_includes {{C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10_New_New/LAB10_Dilshan_New/LAB10/LAB10.srcs/sources_1/imports/new/Decoder_2_to_4.vhd}}
+update_compile_order -fileset TB_Instruction_decoder
+close_sim
+launch_simulation -simset TB_Instruction_decoder
+source TB_Instruction_Decoder.tcl
+close_sim
+launch_simulation -simset TB_Instruction_decoder
+source TB_Instruction_Decoder.tcl
+close_sim
+launch_simulation -simset TB_Instruction_decoder
+source TB_Instruction_Decoder.tcl
+close_sim
+launch_simulation -simset TB_Instruction_decoder
+source TB_Instruction_Decoder.tcl
+close_sim
+launch_simulation -simset TB_Instruction_decoder
+source TB_Instruction_Decoder.tcl
+create_fileset -simset TB_Program_ROM
+set_property SOURCE_SET {} [get_filesets TB_Program_ROM]
+file mkdir {C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10_New_New/LAB10_Dilshan_New/LAB10/LAB10.srcs/TB_Program_ROM/new}
+close [ open {C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10_New_New/LAB10_Dilshan_New/LAB10/LAB10.srcs/TB_Program_ROM/new/TB_Program_ROM.vhd} w ]
+add_files -fileset TB_Program_ROM {{C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10_New_New/LAB10_Dilshan_New/LAB10/LAB10.srcs/TB_Program_ROM/new/TB_Program_ROM.vhd}}
+update_compile_order -fileset TB_Program_ROM
+update_compile_order -fileset TB_Program_ROM
+set_property SOURCE_SET {} [get_filesets TB_Program_ROM]
+add_files -fileset TB_Program_ROM -norecurse -scan_for_includes {{C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10_New_New/LAB10_Dilshan_New/LAB10/LAB10.srcs/sources_1/new/Program_ROM.vhd}}
+current_fileset -simset [ get_filesets TB_Program_ROM ]
+update_compile_order -fileset TB_Program_ROM
+launch_simulation -simset TB_Program_ROM
+source TB_Program_ROM.tcl
+create_fileset -simset TB_AdderBit_3
+set_property SOURCE_SET {} [get_filesets TB_AdderBit_3]
+file mkdir {C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10_New_New/LAB10_Dilshan_New/LAB10/LAB10.srcs/TB_AdderBit_3/new}
+close [ open {C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10_New_New/LAB10_Dilshan_New/LAB10/LAB10.srcs/TB_AdderBit_3/new/TB_AdderBit_3.vhd} w ]
+add_files -fileset TB_AdderBit_3 {{C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10_New_New/LAB10_Dilshan_New/LAB10/LAB10.srcs/TB_AdderBit_3/new/TB_AdderBit_3.vhd}}
+current_fileset -simset [ get_filesets TB_AdderBit_3 ]
+update_compile_order -fileset TB_AdderBit_3
+update_compile_order -fileset TB_AdderBit_3
+set_property SOURCE_SET {} [get_filesets TB_AdderBit_3]
+add_files -fileset TB_AdderBit_3 -norecurse -scan_for_includes {{C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10_New_New/LAB10_Dilshan_New/LAB10/LAB10.srcs/sources_1/new/AdderBit_3.vhd}}
+update_compile_order -fileset TB_AdderBit_3
+set_property SOURCE_SET {} [get_filesets TB_AdderBit_3]
+add_files -fileset TB_AdderBit_3 -norecurse -scan_for_includes {{C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10_New_New/LAB10_Dilshan_New/LAB10/LAB10.srcs/sources_1/imports/new/FA.vhd} {C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10_New_New/LAB10_Dilshan_New/LAB10/LAB10.srcs/sources_1/imports/new/HA.vhd}}
+update_compile_order -fileset TB_AdderBit_3
+launch_simulation -simset TB_AdderBit_3
+source TB_AdderBit_3.tcl
+close [ open {C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10_New_New/LAB10_Dilshan_New/LAB10/LAB10.srcs/sources_1/new/Processor.vhd} w ]
+add_files {{C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10_New_New/LAB10_Dilshan_New/LAB10/LAB10.srcs/sources_1/new/Processor.vhd}}
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Processor [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+add_files -norecurse -scan_for_includes {{C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB05/LAB05.srcs/sources_1/new/Slow_Clk.vhd}}
+import_files -force -norecurse {{C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB05/LAB05.srcs/sources_1/new/Slow_Clk.vhd}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+create_fileset -simset TB_Processor
+set_property SOURCE_SET {} [get_filesets TB_Processor]
+file mkdir {C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10_New_New/LAB10_Dilshan_New/LAB10/LAB10.srcs/TB_Processor/new}
+close [ open {C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10_New_New/LAB10_Dilshan_New/LAB10/LAB10.srcs/TB_Processor/new/TB_Processor.vhd} w ]
+add_files -fileset TB_Processor {{C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10_New_New/LAB10_Dilshan_New/LAB10/LAB10.srcs/TB_Processor/new/TB_Processor.vhd}}
+update_compile_order -fileset TB_Processor
+current_fileset -simset [ get_filesets TB_Processor ]
+update_compile_order -fileset TB_Processor
+set_property SOURCE_SET {} [get_filesets TB_Processor]
+add_files -fileset TB_Processor -norecurse -scan_for_includes {{C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10_New_New/LAB10_Dilshan_New/LAB10/LAB10.srcs/sources_1/new/Processor.vhd}}
+update_compile_order -fileset TB_Processor
+update_files -from_files {{C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10_New_New/LAB10_Dilshan_New/LAB10/LAB10.srcs/sources_1/new/Processor.vhd}} -to_files {{C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10_New_New/LAB10_Dilshan_New/LAB10/LAB10.srcs/sources_1/new/Processor.vhd}} -filesets [get_filesets *]
+set_property SOURCE_SET sources_1 [get_filesets TB_Processor]
+add_files -fileset TB_Processor -norecurse -scan_for_includes {{C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10_New_New/LAB10_Dilshan_New/LAB10/LAB10.srcs/sources_1/new/Mux_8way_4bit.vhd} {C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10_New_New/LAB10_Dilshan_New/LAB10/LAB10.srcs/sources_1/new/Processor.vhd} {C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10_New_New/LAB10_Dilshan_New/LAB10/LAB10.srcs/sources_1/new/AdderBit_3.vhd} {C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10_New_New/LAB10_Dilshan_New/LAB10/LAB10.srcs/sources_1/new/Program_ROM.vhd} {C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10_New_New/LAB10_Dilshan_New/LAB10/LAB10.srcs/sources_1/new/Instruction_Decoder.vhd} {C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10_New_New/LAB10_Dilshan_New/LAB10/LAB10.srcs/sources_1/new/Reg_Bank.vhd} {C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10_New_New/LAB10_Dilshan_New/LAB10/LAB10.srcs/sources_1/new/Program_counter.vhd} {C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10_New_New/LAB10_Dilshan_New/LAB10/LAB10.srcs/sources_1/new/quad_tri_state_buffer.vhd} {C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10_New_New/LAB10_Dilshan_New/LAB10/LAB10.srcs/sources_1/new/Mux_2way_4bit.vhd} {C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10_New_New/LAB10_Dilshan_New/LAB10/LAB10.srcs/sources_1/new/Mux_2_to_1_3bit.vhd}}
+update_compile_order -fileset TB_Processor
+set_property SOURCE_SET sources_1 [get_filesets TB_Register_Bank]
+add_files -fileset TB_Register_Bank -norecurse -scan_for_includes {{C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10_New_New/LAB10_Dilshan_New/LAB10/LAB10.srcs/TB_Register_Bank/Reg_Bank_Sim.vhd}}
+import_files -fileset TB_Register_Bank -norecurse {{C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10_New_New/LAB10_Dilshan_New/LAB10/LAB10.srcs/TB_Register_Bank/Reg_Bank_Sim.vhd}}
+update_compile_order -fileset TB_Register_Bank
+update_compile_order -fileset TB_Register_Bank
+update_files -from_files {{C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10_New_New/LAB10_Dilshan_New/LAB10/LAB10.srcs/TB_Register_Bank/Reg_Bank_Sim.vhd}} -to_files {{C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10_New_New/LAB10GW/LAB10.srcs/sim_1/Reg_Bank_Sim.vhd}} -filesets [get_filesets *]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Reg_Bank_Sim [get_filesets TB_Register_Bank]
+set_property top_lib xil_defaultlib [get_filesets TB_Register_Bank]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+current_fileset -simset [ get_filesets TB_Register_Bank ]
+update_compile_order -fileset TB_Register_Bank
+launch_simulation -simset TB_Register_Bank
+source Reg_Bank_Sim.tcl
+current_fileset -simset [ get_filesets TB_Processor ]
+launch_simulation -simset TB_Processor
+update_compile_order -fileset TB_Processor
+launch_simulation -simset TB_Processor
+update_compile_order -fileset TB_Processor
+launch_simulation -simset TB_Processor
+source TB_Processor.tcl
+update_compile_order -fileset TB_Processor
+current_wave_config {Untitled 10}
+add_wave {{/TB_Processor/UUT/R7}} 
+current_wave_config {Untitled 10}
+add_wave {{/TB_Processor/UUT/Instruction_Bus}} 
+save_wave_config {C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/TB_Processor_behav.wcfg}
+add_files -fileset TB_Processor -norecurse {{C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/TB_Processor_behav.wcfg}}
+set_property xsim.view {{C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/TB_Processor_behav.wcfg}} [get_filesets TB_Processor]
+close_sim
+launch_simulation -simset TB_Processor
+open_wave_config {C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/TB_Processor_behav.wcfg}
+source TB_Processor.tcl
+close_sim
+current_sim simulation_9
+close_sim
+current_sim simulation_8
+close_sim
+current_sim simulation_7
+close_sim
+close_sim

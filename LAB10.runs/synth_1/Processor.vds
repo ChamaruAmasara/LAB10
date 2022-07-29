@@ -1,0 +1,450 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Jul 29 13:31:09 2022
+# Process ID: 10540
+# Current directory: C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.runs/synth_1
+# Command line: vivado.exe -log Processor.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Processor.tcl
+# Log file: C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.runs/synth_1/Processor.vds
+# Journal file: C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Processor.tcl -notrace
+Command: synth_design -top Processor -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 20200 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 434.770 ; gain = 94.832
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Processor' [C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/new/Processor.vhd:45]
+INFO: [Synth 8-3491] module 'Slow_Clk' declared at 'C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/imports/new/Slow_Clk.vhd:34' bound to instance 'Slow_Clk0' of component 'Slow_Clk' [C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/new/Processor.vhd:244]
+INFO: [Synth 8-638] synthesizing module 'Slow_Clk' [C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/imports/new/Slow_Clk.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'Slow_Clk' (1#1) [C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/imports/new/Slow_Clk.vhd:39]
+INFO: [Synth 8-3491] module 'Register_bank' declared at 'C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/imports/new/Register_bank.vhd:34' bound to instance 'Register_bank0' of component 'Register_bank' [C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/new/Processor.vhd:249]
+INFO: [Synth 8-638] synthesizing module 'Register_bank' [C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/imports/new/Register_bank.vhd:52]
+INFO: [Synth 8-3491] module 'Decoder_3_to_8' declared at 'C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/imports/new/Decoder_3_to_8.vhd:34' bound to instance 'Decoder_3_to_8_0' of component 'Decoder_3_to_8' [C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/imports/new/Register_bank.vhd:70]
+INFO: [Synth 8-638] synthesizing module 'Decoder_3_to_8' [C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/imports/new/Decoder_3_to_8.vhd:40]
+INFO: [Synth 8-3491] module 'Decoder_2_to_4' declared at 'C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/imports/new/Decoder_2_to_4.vhd:34' bound to instance 'Decoder_2_to_4_0' of component 'Decoder_2_to_4' [C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/imports/new/Decoder_3_to_8.vhd:52]
+INFO: [Synth 8-638] synthesizing module 'Decoder_2_to_4' [C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/imports/new/Decoder_2_to_4.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'Decoder_2_to_4' (2#1) [C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/imports/new/Decoder_2_to_4.vhd:40]
+INFO: [Synth 8-3491] module 'Decoder_2_to_4' declared at 'C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/imports/new/Decoder_2_to_4.vhd:34' bound to instance 'Decoder_2_to_4_1' of component 'Decoder_2_to_4' [C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/imports/new/Decoder_3_to_8.vhd:58]
+INFO: [Synth 8-256] done synthesizing module 'Decoder_3_to_8' (3#1) [C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/imports/new/Decoder_3_to_8.vhd:40]
+INFO: [Synth 8-3491] module 'Reg' declared at 'C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/imports/new/Reg.vhd:34' bound to instance 'R01' of component 'Reg' [C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/imports/new/Register_bank.vhd:76]
+INFO: [Synth 8-638] synthesizing module 'Reg' [C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/imports/new/Reg.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'Reg' (4#1) [C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/imports/new/Reg.vhd:42]
+INFO: [Synth 8-3491] module 'Reg' declared at 'C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/imports/new/Reg.vhd:34' bound to instance 'R11' of component 'Reg' [C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/imports/new/Register_bank.vhd:84]
+INFO: [Synth 8-3491] module 'Reg' declared at 'C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/imports/new/Reg.vhd:34' bound to instance 'R21' of component 'Reg' [C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/imports/new/Register_bank.vhd:92]
+INFO: [Synth 8-3491] module 'Reg' declared at 'C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/imports/new/Reg.vhd:34' bound to instance 'R31' of component 'Reg' [C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/imports/new/Register_bank.vhd:100]
+INFO: [Synth 8-3491] module 'Reg' declared at 'C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/imports/new/Reg.vhd:34' bound to instance 'R41' of component 'Reg' [C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/imports/new/Register_bank.vhd:108]
+INFO: [Synth 8-3491] module 'Reg' declared at 'C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/imports/new/Reg.vhd:34' bound to instance 'R51' of component 'Reg' [C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/imports/new/Register_bank.vhd:116]
+INFO: [Synth 8-3491] module 'Reg' declared at 'C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/imports/new/Reg.vhd:34' bound to instance 'R61' of component 'Reg' [C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/imports/new/Register_bank.vhd:124]
+INFO: [Synth 8-3491] module 'Reg' declared at 'C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/imports/new/Reg.vhd:34' bound to instance 'R71' of component 'Reg' [C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/imports/new/Register_bank.vhd:132]
+INFO: [Synth 8-256] done synthesizing module 'Register_bank' (5#1) [C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/imports/new/Register_bank.vhd:52]
+INFO: [Synth 8-3491] module 'Mux_2way_3bit' declared at 'C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/new/Mux_2_to_1_3bit.vhd:34' bound to instance 'Mux_2way_3bit0' of component 'Mux_2way_3bit' [C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/new/Processor.vhd:267]
+INFO: [Synth 8-638] synthesizing module 'Mux_2way_3bit' [C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/new/Mux_2_to_1_3bit.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'Mux_2way_3bit' (6#1) [C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/new/Mux_2_to_1_3bit.vhd:42]
+INFO: [Synth 8-3491] module 'Mux_2way_4bit' declared at 'C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/new/Mux_2way_4bit.vhd:34' bound to instance 'Mux_2way_4bit0' of component 'Mux_2way_4bit' [C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/new/Processor.vhd:277]
+INFO: [Synth 8-638] synthesizing module 'Mux_2way_4bit' [C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/new/Mux_2way_4bit.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'Mux_2way_4bit' (7#1) [C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/new/Mux_2way_4bit.vhd:44]
+INFO: [Synth 8-3491] module 'Mux_8way_4bit' declared at 'C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/imports/new/Mux_8way_4bit.vhd:34' bound to instance 'Mux_8way_4bit1' of component 'Mux_8way_4bit' [C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/new/Processor.vhd:286]
+INFO: [Synth 8-638] synthesizing module 'Mux_8way_4bit' [C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/imports/new/Mux_8way_4bit.vhd:56]
+INFO: [Synth 8-3491] module 'Decoder_3_to_8' declared at 'C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/imports/new/Decoder_3_to_8.vhd:34' bound to instance 'Decoder_3_to_8_0' of component 'Decoder_3_to_8' [C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/imports/new/Mux_8way_4bit.vhd:79]
+INFO: [Synth 8-3491] module 'quad_tri_state_buffer' declared at 'C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/new/quad_tri_state_buffer.vhd:34' bound to instance 'quad_tri_state_buffer_0' of component 'quad_tri_state_buffer' [C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/imports/new/Mux_8way_4bit.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'quad_tri_state_buffer' [C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/new/quad_tri_state_buffer.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'quad_tri_state_buffer' (8#1) [C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/new/quad_tri_state_buffer.vhd:40]
+INFO: [Synth 8-3491] module 'quad_tri_state_buffer' declared at 'C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/new/quad_tri_state_buffer.vhd:34' bound to instance 'quad_tri_state_buffer_1' of component 'quad_tri_state_buffer' [C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/imports/new/Mux_8way_4bit.vhd:91]
+INFO: [Synth 8-3491] module 'quad_tri_state_buffer' declared at 'C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/new/quad_tri_state_buffer.vhd:34' bound to instance 'quad_tri_state_buffer_2' of component 'quad_tri_state_buffer' [C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/imports/new/Mux_8way_4bit.vhd:97]
+INFO: [Synth 8-3491] module 'quad_tri_state_buffer' declared at 'C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/new/quad_tri_state_buffer.vhd:34' bound to instance 'quad_tri_state_buffer_3' of component 'quad_tri_state_buffer' [C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/imports/new/Mux_8way_4bit.vhd:103]
+INFO: [Synth 8-3491] module 'quad_tri_state_buffer' declared at 'C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/new/quad_tri_state_buffer.vhd:34' bound to instance 'quad_tri_state_buffer_4' of component 'quad_tri_state_buffer' [C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/imports/new/Mux_8way_4bit.vhd:109]
+INFO: [Synth 8-3491] module 'quad_tri_state_buffer' declared at 'C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/new/quad_tri_state_buffer.vhd:34' bound to instance 'quad_tri_state_buffer_5' of component 'quad_tri_state_buffer' [C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/imports/new/Mux_8way_4bit.vhd:115]
+INFO: [Synth 8-3491] module 'quad_tri_state_buffer' declared at 'C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/new/quad_tri_state_buffer.vhd:34' bound to instance 'quad_tri_state_buffer_6' of component 'quad_tri_state_buffer' [C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/imports/new/Mux_8way_4bit.vhd:121]
+INFO: [Synth 8-3491] module 'quad_tri_state_buffer' declared at 'C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/new/quad_tri_state_buffer.vhd:34' bound to instance 'quad_tri_state_buffer_7' of component 'quad_tri_state_buffer' [C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/imports/new/Mux_8way_4bit.vhd:127]
+INFO: [Synth 8-256] done synthesizing module 'Mux_8way_4bit' (9#1) [C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/imports/new/Mux_8way_4bit.vhd:56]
+INFO: [Synth 8-3491] module 'Mux_8way_4bit' declared at 'C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/imports/new/Mux_8way_4bit.vhd:34' bound to instance 'Mux_8way_4bit2' of component 'Mux_8way_4bit' [C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/new/Processor.vhd:307]
+INFO: [Synth 8-3491] module 'AddSubUnitBit_4' declared at 'C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/imports/sim_1/AddSubUnitBit_4.vhd:34' bound to instance 'AddSubUnitBit_40' of component 'AddSubUnitBit_4' [C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/new/Processor.vhd:329]
+INFO: [Synth 8-638] synthesizing module 'AddSubUnitBit_4' [C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/imports/sim_1/AddSubUnitBit_4.vhd:43]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/imports/new/FA.vhd:34' bound to instance 'FA_0' of component 'FA' [C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/imports/sim_1/AddSubUnitBit_4.vhd:63]
+INFO: [Synth 8-638] synthesizing module 'FA' [C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/imports/new/FA.vhd:42]
+INFO: [Synth 8-3491] module 'HA' declared at 'C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/imports/new/HA.vhd:34' bound to instance 'HA_0' of component 'HA' [C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/imports/new/FA.vhd:55]
+INFO: [Synth 8-638] synthesizing module 'HA' [C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/imports/new/HA.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'HA' (10#1) [C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/imports/new/HA.vhd:41]
+INFO: [Synth 8-3491] module 'HA' declared at 'C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/imports/new/HA.vhd:34' bound to instance 'HA_1' of component 'HA' [C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/imports/new/FA.vhd:63]
+INFO: [Synth 8-256] done synthesizing module 'FA' (11#1) [C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/imports/new/FA.vhd:42]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/imports/new/FA.vhd:34' bound to instance 'FA_1' of component 'FA' [C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/imports/sim_1/AddSubUnitBit_4.vhd:72]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/imports/new/FA.vhd:34' bound to instance 'FA_2' of component 'FA' [C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/imports/sim_1/AddSubUnitBit_4.vhd:81]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/imports/new/FA.vhd:34' bound to instance 'FA_3' of component 'FA' [C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/imports/sim_1/AddSubUnitBit_4.vhd:90]
+INFO: [Synth 8-256] done synthesizing module 'AddSubUnitBit_4' (12#1) [C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/imports/sim_1/AddSubUnitBit_4.vhd:43]
+INFO: [Synth 8-3491] module 'Instruction_Decoder' declared at 'C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/imports/new/Instruction_Decoder.vhd:34' bound to instance 'Instruction_Decoder0' of component 'Instruction_Decoder' [C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/new/Processor.vhd:341]
+INFO: [Synth 8-638] synthesizing module 'Instruction_Decoder' [C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/imports/new/Instruction_Decoder.vhd:47]
+INFO: [Synth 8-3491] module 'Decoder_2_to_4' declared at 'C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/imports/new/Decoder_2_to_4.vhd:34' bound to instance 'Decoder_2_to_4_0' of component 'Decoder_2_to_4' [C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/imports/new/Instruction_Decoder.vhd:60]
+INFO: [Synth 8-256] done synthesizing module 'Instruction_Decoder' (13#1) [C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/imports/new/Instruction_Decoder.vhd:47]
+INFO: [Synth 8-3491] module 'Program_ROM' declared at 'C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/imports/new/Program_counter.vhd:34' bound to instance 'Program_ROM0' of component 'Program_ROM' [C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/new/Processor.vhd:354]
+INFO: [Synth 8-638] synthesizing module 'Program_ROM' [C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/imports/new/Program_counter.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'Program_ROM' (14#1) [C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/imports/new/Program_counter.vhd:39]
+INFO: [Synth 8-3491] module 'AdderBit_3' declared at 'C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/new/AdderBit_3.vhd:37' bound to instance 'AdderBit_30' of component 'AdderBit_3' [C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/new/Processor.vhd:359]
+INFO: [Synth 8-638] synthesizing module 'AdderBit_3' [C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/new/AdderBit_3.vhd:43]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/imports/new/FA.vhd:34' bound to instance 'FA_0' of component 'FA' [C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/new/AdderBit_3.vhd:59]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/imports/new/FA.vhd:34' bound to instance 'FA_1' of component 'FA' [C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/new/AdderBit_3.vhd:67]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/imports/new/FA.vhd:34' bound to instance 'FA_2' of component 'FA' [C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/new/AdderBit_3.vhd:75]
+WARNING: [Synth 8-3848] Net C_OUT in module/entity AdderBit_3 does not have driver. [C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/new/AdderBit_3.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'AdderBit_3' (15#1) [C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/new/AdderBit_3.vhd:43]
+INFO: [Synth 8-3491] module 'Program_counter' declared at 'C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/new/Program_counter.vhd:34' bound to instance 'Program_counter0' of component 'Program_counter' [C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/new/Processor.vhd:366]
+INFO: [Synth 8-638] synthesizing module 'Program_counter' [C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/new/Program_counter.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'Program_counter' (16#1) [C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/new/Program_counter.vhd:42]
+INFO: [Synth 8-3491] module 'R7_7_seg' declared at 'C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/new/R7_7_seg.vhd:34' bound to instance 'R7_7_seg_0' of component 'R7_7_seg' [C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/new/Processor.vhd:373]
+INFO: [Synth 8-638] synthesizing module 'R7_7_seg' [C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/new/R7_7_seg.vhd:42]
+INFO: [Synth 8-3491] module 'LUT_16_7' declared at 'C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/imports/new/LUT_16_7.vhd:35' bound to instance 'LUT_16_7_0' of component 'LUT_16_7' [C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/new/R7_7_seg.vhd:52]
+INFO: [Synth 8-638] synthesizing module 'LUT_16_7' [C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/imports/new/LUT_16_7.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'LUT_16_7' (17#1) [C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/imports/new/LUT_16_7.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'R7_7_seg' (18#1) [C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/new/R7_7_seg.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'Processor' (19#1) [C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/sources_1/new/Processor.vhd:45]
+WARNING: [Synth 8-3331] design AdderBit_3 has unconnected port C_OUT
+WARNING: [Synth 8-3331] design Mux_8way_4bit has unconnected port EN
+WARNING: [Synth 8-3331] design Mux_2way_4bit has unconnected port EN
+WARNING: [Synth 8-3331] design Mux_2way_3bit has unconnected port EN
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 490.496 ; gain = 150.559
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 490.496 ; gain = 150.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 490.496 ; gain = 150.559
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/constrs_1/imports/Lab Sessions/Basys3Labs.xdc]
+Finished Parsing XDC File [C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/constrs_1/imports/Lab Sessions/Basys3Labs.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/constrs_1/imports/Lab Sessions/Basys3Labs.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Processor_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Processor_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 816.074 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 816.074 ; gain = 476.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 816.074 ; gain = 476.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 816.074 ; gain = 476.137
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Clk_status" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "sevenSegment_ROM" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sevenSegment_ROM" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 816.074 ; gain = 476.137
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 18    
++---Registers : 
+	               32 Bit    Registers := 1     
+	                4 Bit    Registers := 8     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   9 Input     12 Bit        Muxes := 1     
+	  17 Input      7 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Slow_Clk 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module Reg 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+Module Mux_2way_3bit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+Module Mux_2way_4bit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module HA 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module AddSubUnitBit_4 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 4     
+Module Program_ROM 
+Detailed RTL Component Info : 
++---Muxes : 
+	   9 Input     12 Bit        Muxes := 1     
+Module Program_counter 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 1     
+Module LUT_16_7 
+Detailed RTL Component Info : 
++---Muxes : 
+	  17 Input      7 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5545] ROM "Slow_Clk0/count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Slow_Clk0/Clk_status" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-3917] design Processor has port anode_out[3] driven by constant 1
+WARNING: [Synth 8-3917] design Processor has port anode_out[2] driven by constant 1
+WARNING: [Synth 8-3917] design Processor has port anode_out[1] driven by constant 1
+WARNING: [Synth 8-3917] design Processor has port anode_out[0] driven by constant 0
+INFO: [Synth 8-3886] merging instance 'Register_bank0/R01/Q_reg[3]' (FDRE) to 'Register_bank0/R01/Q_reg[2]'
+INFO: [Synth 8-3886] merging instance 'Register_bank0/R01/Q_reg[2]' (FDRE) to 'Register_bank0/R01/Q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Register_bank0/R01/Q_reg[1]' (FDRE) to 'Register_bank0/R01/Q_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Register_bank0/R01/Q_reg[0] )
+WARNING: [Synth 8-3332] Sequential element (Register_bank0/R01/Q_reg[0]) is unused and will be removed from module Processor.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:27 . Memory (MB): peak = 816.074 ; gain = 476.137
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:45 . Memory (MB): peak = 816.074 ; gain = 476.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:46 . Memory (MB): peak = 833.617 ; gain = 493.680
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'Register_bank0/R11/Q_reg[1]' (FDRE) to 'Register_bank0/R51/Q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Register_bank0/R41/Q_reg[1]' (FDRE) to 'Register_bank0/R51/Q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Register_bank0/R51/Q_reg[1]' (FDRE) to 'Register_bank0/R61/Q_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Register_bank0/R61/Q_reg[1] )
+INFO: [Synth 8-3886] merging instance 'Register_bank0/R11/Q_reg[0]' (FDRE) to 'Register_bank0/R51/Q_reg[0]'
+INFO: [Synth 8-3886] merging instance 'Register_bank0/R41/Q_reg[0]' (FDRE) to 'Register_bank0/R51/Q_reg[0]'
+INFO: [Synth 8-3886] merging instance 'Register_bank0/R51/Q_reg[0]' (FDRE) to 'Register_bank0/R61/Q_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Register_bank0/R61/Q_reg[0] )
+INFO: [Synth 8-3886] merging instance 'Register_bank0/R11/Q_reg[3]' (FDRE) to 'Register_bank0/R51/Q_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Register_bank0/R41/Q_reg[3]' (FDRE) to 'Register_bank0/R51/Q_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Register_bank0/R51/Q_reg[3]' (FDRE) to 'Register_bank0/R61/Q_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Register_bank0/R61/Q_reg[3] )
+INFO: [Synth 8-3886] merging instance 'Register_bank0/R11/Q_reg[2]' (FDRE) to 'Register_bank0/R51/Q_reg[2]'
+INFO: [Synth 8-3886] merging instance 'Register_bank0/R41/Q_reg[2]' (FDRE) to 'Register_bank0/R51/Q_reg[2]'
+INFO: [Synth 8-3886] merging instance 'Register_bank0/R51/Q_reg[2]' (FDRE) to 'Register_bank0/R61/Q_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Register_bank0/R61/Q_reg[2] )
+WARNING: [Synth 8-3332] Sequential element (Register_bank0/R61/Q_reg[1]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (Register_bank0/R61/Q_reg[0]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (Register_bank0/R61/Q_reg[3]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (Register_bank0/R61/Q_reg[2]) is unused and will be removed from module Processor.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:34 ; elapsed = 00:00:46 . Memory (MB): peak = 834.395 ; gain = 494.457
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:35 ; elapsed = 00:00:48 . Memory (MB): peak = 834.395 ; gain = 494.457
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:35 ; elapsed = 00:00:48 . Memory (MB): peak = 834.395 ; gain = 494.457
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:35 ; elapsed = 00:00:48 . Memory (MB): peak = 834.395 ; gain = 494.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:35 ; elapsed = 00:00:48 . Memory (MB): peak = 834.395 ; gain = 494.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:00:48 . Memory (MB): peak = 834.395 ; gain = 494.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:35 ; elapsed = 00:00:48 . Memory (MB): peak = 834.395 ; gain = 494.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     8|
+|3     |LUT2   |    13|
+|4     |LUT3   |    15|
+|5     |LUT4   |    24|
+|6     |LUT5   |     9|
+|7     |LUT6   |    15|
+|8     |FDRE   |    49|
+|9     |IBUF   |     2|
+|10    |OBUF   |    17|
++------+-------+------+
+
+Report Instance Areas: 
++------+-----------------------+----------------+------+
+|      |Instance               |Module          |Cells |
++------+-----------------------+----------------+------+
+|1     |top                    |                |   153|
+|2     |  Mux_8way_4bit1       |Mux_8way_4bit   |     1|
+|3     |    Decoder_3_to_8_0   |Decoder_3_to_8  |     1|
+|4     |      Decoder_2_to_4_0 |Decoder_2_to_4  |     1|
+|5     |  Program_counter0     |Program_counter |    30|
+|6     |  Register_bank0       |Register_bank   |    48|
+|7     |    R21                |Reg             |     4|
+|8     |    R31                |Reg_0           |    12|
+|9     |    R71                |Reg_1           |    32|
+|10    |  Slow_Clk0            |Slow_Clk        |    54|
++------+-----------------------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:35 ; elapsed = 00:00:48 . Memory (MB): peak = 834.395 ; gain = 494.457
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 9 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:36 . Memory (MB): peak = 834.395 ; gain = 168.879
+Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:00:48 . Memory (MB): peak = 834.395 ; gain = 494.457
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 10 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+119 Infos, 14 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:52 . Memory (MB): peak = 834.395 ; gain = 507.363
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.runs/synth_1/Processor.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Processor_utilization_synth.rpt -pb Processor_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.072 . Memory (MB): peak = 834.395 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Jul 29 13:32:10 2022...

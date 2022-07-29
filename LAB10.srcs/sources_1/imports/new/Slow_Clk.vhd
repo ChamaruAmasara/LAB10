@@ -2,7 +2,7 @@
 -- Company: 
 -- Engineer: 
 -- 
--- Create Date: 06/09/2022 02:47:54 PM
+-- Create Date: 06/18/2022 04:56:08 AM
 -- Design Name: 
 -- Module Name: Slow_Clk - Behavioral
 -- Project Name: 
@@ -37,22 +37,23 @@ entity Slow_Clk is
 end Slow_Clk;
 
 architecture Behavioral of Slow_Clk is
-signal count : integer := 1;
-signal clk_status : STD_LOGIC := '0';
+
+signal count:integer:=1;
+signal Clk_status:std_logic:='0';
 
 begin
-
     process (Clk_in) begin
         if (rising_edge(Clk_in)) then
-            count <= count +1;
-            if (count = 5) then
-                clk_status <= not clk_status;
-                Clk_out <= clk_status;
-                count <= 1;
+            count<=count+1;
+            if (count=100000000) then
+            --if (count=1) then
+            
+                Clk_status<=not Clk_status;
+                Clk_out<=Clk_status;
+                count<=1;
             end if;
         end if;
     end process;
-            
 
 
 end Behavioral;

@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/TB_Mux_2_to_1_3bit/imports/new/Mux_2_to_1_3bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mux_2way_3bit
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/mailt/Documents/A UoM/3. Computer Organization and Digital Design/Lab Sessions/LAB10/LAB10.srcs/TB_Mux_2_to_1_3bit/new/TB_Mux_2_to_1_3bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity TB_Mux_2_to_1_3bit
