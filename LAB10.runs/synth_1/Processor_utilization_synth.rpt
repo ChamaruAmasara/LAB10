@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Fri Jul 29 13:32:10 2022
+| Date         : Fri Jul 29 13:56:36 2022
 | Host         : Chamaru-XPS running 64-bit major release  (build 9200)
 | Command      : report_utilization -file Processor_utilization_synth.rpt -pb Processor_utilization_synth.pb
 | Design       : Processor
@@ -150,14 +150,15 @@ Table of Contents
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
 | FDRE     |   49 |        Flop & Latch |
-| LUT4     |   24 |                 LUT |
+| LUT4     |   22 |                 LUT |
 | OBUF     |   17 |                  IO |
-| LUT6     |   15 |                 LUT |
 | LUT3     |   15 |                 LUT |
+| LUT6     |   14 |                 LUT |
 | LUT2     |   13 |                 LUT |
-| LUT5     |    9 |                 LUT |
+| LUT5     |   11 |                 LUT |
 | CARRY4   |    8 |          CarryLogic |
 | IBUF     |    2 |                  IO |
+| LUT1     |    1 |                 LUT |
 | BUFG     |    1 |               Clock |
 +----------+------+---------------------+
 
